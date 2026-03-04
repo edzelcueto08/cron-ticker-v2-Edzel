@@ -18,6 +18,10 @@ describe('multiply', () => {
         expect(() => multiply('a', 3)).toThrow('Los argumentos deben ser números');
     });
 
+    test('debe fallar a propósito en la multiplicación', () => {
+        expect(multiply(3, 4)).toBe(15);
+    });
+
 });
 
 describe('isEven', () => {
